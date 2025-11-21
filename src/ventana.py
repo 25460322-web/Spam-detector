@@ -1,8 +1,8 @@
-import tkinter as tk 
+import tkinter as tk
 from tkinter import messagebox
 
 def mostrar_mensaje():
-    messagebox.showinfo("¡Aviso", "¡Boton presionado!")
+    messagebox.showinfo("Aviso","Boton presionado")
 
 ventana = tk.Tk()
 ventana.title("Ventana simple")
