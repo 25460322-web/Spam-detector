@@ -39,3 +39,4 @@ def predice_spam(texto):
 # Ejemplo de SPAM: "Win easy money now!!! Just click this link."
 email_prueba = "Hi Mark, are we still on for the meeting tomorrow?"
 print(predice_spam(email_prueba))
+
