@@ -1,17 +1,144 @@
-#practica para detectar 
-En esta practica consisitio en crear un proyecto desde cero para detectar mensajes de spam utilizando el lenguaje python, creo que esto es en base a machine learning y con la ventana de tkinter para la interfaz, tambien prendiendo a usar la terminal,git, github y entornos virtuales para asi ir aprendiendo profesinalmente como trabaja un desarrollador, con la ayuda de los comandos basicos como mkdir, cd creamos carpetas y estructuras de nuestro trabajo el entorno virtual al igual lo activamos para instalar las librerias sin afectar el sistema y llevar un trabajo limpio, utilizamos e instalamos librerias como pandas,scikit/learn y freeze una vez ya configurado y estrucurado nuestro proyecto empezamos a codear nuestros archivos en spam?detector cargamos el spam.csv(dataset), se limpian las columna, dividimos datos de entrenamiento y prueba con el CountVectorizer convertimos el texto a numeros entrenamos el moelo como tal y con funciones para predeccir si el texto es spam  una vez terminado se evalua la precision del modelo, en la construccion de la ventana agregamos un titulo, caja de texto para el mensaje, el btotn de analizar y una eqiqueta respondiendo si es SPAM o NO SPAM el funcionamiento del proyecto como tal no es complicada escribimos el mensaje en la ventana Tkinter manda el texto al modelo el modelo lo analiza y clasifica por SPAM color rojo, NO SPAM con color verde y muestra el resultado en la ventana, sin embargo como en todo hay mejoras opino que se le puede dar un mejor procesamiento del texto, inveigar modelos mas avanzados y agregarlos usar un boton de reinicio o de limpar el texto, mostrar la precision del modelo dentro de la ventana, o incluso tener una base de datos para que guarde el historial o hacerla para diferentes entornos como web entre otros ya dependieno de la utilidad, con los comandos tmabien a guardar el codigo en github para asi llevar un control de versiones y poderlo compartir con equipos o amigos, al igual en la practica me ayudo mucho a teclear ya que tuve algunos errores de dedos que practicamente eran por parentesis o problemas de identacion que me hacian tronar el codigo y por ende no podia ejecutarlo me hizo examinar, razonar y corregir estos pequenos problemas 
+¿Qué es y qué hace la práctica? / ¿Qué aprendimos?
 
-los usos de los comandos 
-con mkdir creamos la carpeta
-con cd nos movemos entre carpetas ayudando a estructurar nuestro proyecto en el enterno usamos python /m venv venv y despues lo activamos con venv\Scripts\activate
+En esta práctica realizamos un proyecto desde cero para detectar mensajes de spam utilizando Python. La práctica combina conceptos de machine learning con la creación de una interfaz gráfica usando Tkinter, además de aprender a trabajar de forma profesional como un desarrollador: uso de la terminal, manejo de carpetas, entornos virtuales, Git y GitHub.
 
-con git config,init,clone configuramos git 
+Aprendimos todo el proceso completo: desde crear la estructura de carpetas, instalar y activar un entorno virtual, instalar librerías necesarias sin afectar el sistema, cargar y limpiar datos de un dataset, entrenar un modelo de machine learning, evaluar su precisión y, finalmente, integrar todo en una ventana gráfica amigable para el usuario.
 
-con git add ., git commit, git push ayudan a seleccion de archivos guardan y suben el avance a github clavo antes de eso hubo unso comandos para configurar nuestro github comandos como git config --global user.name
+También reforzamos la importancia de revisar errores, identaciones, paréntesis y sintaxis en general, ya que varios errores surgieron por detalles mínimos que hubo que razonar y corregir manualmente.
+
+
+¿Cómo lo hicimos? / Tecnologías y librerías utilizadas
+
+Creación del proyecto
+
+Usamos la terminal para crear carpetas con:
+
+mkdir → crear carpetas
+
+cd → movernos entre carpetas para organizar el proyecto para ayudarnos en la estructura del proyecto
+![alt text](image-7.png)
+
+
+Entorno virtual
+
+Lo creamos con:
+
+python -m venv venv
+
+Lo activamos con:
+
+venv\Scripts\activate
+
+Esto nos ayudó a mantener un ambiente limpio e independiente.
+
+![alt text](image.png)
+
+
+Instalación de librerías
+Usamos pip install para instalar las herramientas necesarias:
+
+pandas → cargar y manipular datos
+
+scikit-learn → entrenar el modelo de machine learning
+
+tkinter → interfaz gráfica
+
+freeze → generar lista de dependencias
+![alt text](image-1.png)
+
+
+Desarrollo del detector de spam
+
+Cargamos el dataset spam.csv
+
+Limpiamos columnas innecesarias
+
+Dividimos datos en entrenamiento y prueba
+
+Convertimos el texto a números usando CountVectorizer
+
+Entrenamos el modelo para clasificar entre SPAM y NO SPAM
+
+Creamos funciones para predecir si un mensaje es spam
+
+Evaluamos la precisión del modelo
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+
+Interfaz gráfica
+
+Creamos una ventana con Tkinter que incluye:
+
+Título de la aplicación
+
+Caja de texto para escribir el mensaje
+
+Botón Analizar
+
+Etiqueta que muestra el resultado:
+
+SPAM en rojo
+
+NO SPAM en verde
+![alt text](image-4.png)
+
+
+Uso de Git y GitHub
+
+Configuramos Git:
+
+git config --global user.name
+
 git config --global user.email
-git config --global.init.defaultBrach main
-para corroborar podemos decirle que nos lo de en lista lo que hemos realizado con este comando git config --global --list
 
-Y usamos license para tener una licencia de nuestro trabajo y claro asi ser como legitimmos en el codigo claramente eso es ya en trabajos profesionales solo que al usar IA dejamos de tener el dereccho ya que es una condicion realizar el codigo sin IA
+git config --global init.defaultBranch main
 
-fue todo lo demas son cosas sencillas con esta practica como ya lo dije ahora al pasar un codigo debemos poner mas atencion en todo para asi no tener errores
+git config --global --list
+
+
+Inicializamos repositorio con git init
+
+Usamos los comandos principales:
+
+git add . → seleccionar archivos
+
+git commit -m "" → guardar cambios
+
+git push → subirlos a GitHub
+![alt text](image-5.png)
+
+Se agregó una licencia para darle formalidad al proyecto (importante en trabajos profesionales).
+Siempre y cuando no se utilice IA
+![alt text](image-6.png)
+
+Trabajo futuro / Oportunidades de mejora / Solución de posibles errores
+
+Aunque la aplicación funciona, existen muchas oportunidades para mejorarla:
+
+Hacer un mejor procesamiento del texto (limpieza, normalización).
+
+Probar modelos más avanzados de machine learning o NLP.
+
+Agregar un botón para limpiar o reiniciar el contenido.
+
+Mostrar dentro de la ventana la precisión del modelo.
+
+Conectar una base de datos para guardar el historial de mensajes analizados.
+
+Crear una versión web o móvil del proyecto.
+
+Mejorar el diseño visual de la ventana.
+
+
+Manejar errores comunes como:
+
+Mala identación
+
+Paréntesis o comillas abiertas
+
+Imports mal escritos
+
+Modelo no cargado correctamente
+
+Estas correciones y analisis me permitirían tener una herramienta más profesional y robusta en el mundo laboral.
